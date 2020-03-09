@@ -19,7 +19,7 @@ public class Git_exerc05 {
         Petroleiro pe= new Petroleiro("MA");
         PortaContentores pc = new PortaContentores("MB");
         
-        
+        pe.setNome("Catarina");
     }
     
 }

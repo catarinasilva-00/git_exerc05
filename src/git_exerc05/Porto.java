@@ -5,14 +5,37 @@
  */
 package git_exerc05;
 
+
+import java.util.ArrayList;
+
 /**
  *
  * @author catar
  */
 public class Porto {
-    int capPorto;
+    int cpPorto;
+    int ctNavios;
+    ArrayList <Navio> navios;
     
     public Porto(int capPorto){
-        this.capPorto=capPorto;
+        this.cpPorto=capPorto;
+        navios = new ArrayList<Navio>();
     }
+public void novoNavio(Navio n){
+    if(ctNavios == cpPorto){
+        System.out.println("Limite atingido");
+        return;
+    }
+    boolean enc =false;
+    for(int i=0; i<ctNavios; i++){
+        if(n.getMatricula().equals(navios.get(i).getMatricula())){
+            enc= true;
+            System.out.println("Matricula existente");
+        }
+        if(!enc){
+            navios.add(n);
+            ctNavios++;
+        }
+    }
+}
 }

@@ -15,7 +15,11 @@ public class Git_exerc05 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Porto p = new Porto(3);
+        Petroleiro pe= new Petroleiro("MA");
+        PortaContentores pc = new PortaContentores("MB");
+        
+        
     }
     
 }

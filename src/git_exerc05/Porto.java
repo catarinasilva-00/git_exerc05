@@ -23,14 +23,14 @@ public class Porto {
     }
 public void novoNavio(Navio n){
     if(ctNavios == cpPorto){
-        System.out.println("Limite atingido");
+        System.out.println("Limite atingido!");
         return;
     }
     boolean enc =false;
     for(int i=0; i<ctNavios; i++){
         if(n.getMatricula().equals(navios.get(i).getMatricula())){
             enc= true;
-            System.out.println("Matricula existente");
+            System.out.println("Matrícula existente!");
         }
         if(!enc){
             navios.add(n);

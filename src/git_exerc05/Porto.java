@@ -30,7 +30,7 @@ public void novoNavio(Navio n){
     for(int i=0; i<ctNavios; i++){
         if(n.getMatricula().equals(navios.get(i).getMatricula())){
             enc= true;
-            System.out.println("Matrícula existente!");
+            System.out.println("Esta matrícula já existe!");
         }
         if(!enc){
             navios.add(n);
